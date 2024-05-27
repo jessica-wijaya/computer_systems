@@ -1,0 +1,27 @@
+TASK 1 COMMANDS:
+
+./allocate -f "cases\task1\spec.txt" -m infinite -q 1
+./allocate -f "cases\task1\two-processes.txt" -m infinite -q 1
+./allocate -f "cases\task1\two-processes.txt" -m infinite -q 3
+
+TASK 2 COMMANDS:
+
+./allocate -f "cases\task2\consecutive-running.txt" -m first-fit -q 3
+./allocate -f "cases\task2\fill.txt" -m first-fit -q 3
+./allocate -f "cases\task2\non-fit.txt" -m first-fit -q 1
+./allocate -f "cases\task2\non-fit.txt" -m first-fit -q 3
+./allocate -f "cases\task2\retake-left.txt" -m first-fit -q 3
+
+TASK 3 COMMANDS:
+
+./allocate -f "cases\task3\internal-frag.txt" -m paged -q 1
+./allocate -f "cases\task3\simple-alloc.txt" -m paged -q 3
+./allocate -f "cases\task3\simple-evict.txt" -m paged -q 1
+
+
+TASK 4 COMMANDS:
+
+./allocate -f "cases\task4\no-evict.txt" -m virtual -q 3
+./allocate -f "cases\task4\to-evict.txt" -m virtual -q 3
+./allocate -f "cases\task4\virtual-evict-alt.txt" -m virtual -q 1
+./allocate -f "cases\task4\virtual-evict.txt" -m virtual -q 1
